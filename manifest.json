@@ -1,11 +1,12 @@
 {
-    "name": "vi-notify",
+    "name": "Vi-Notify",
     "version": "1.0.0",
     "manifest_version": 3,
-    "description": "A simple extension to notify students of Moodle. Neo-colab last dates.",
+    "description": "A simple extension to notify students of Moodle/Neo-colab assignments' last dates, in their browser itself.",
     "permissions": [
         "activeTab",
-        "storage"
+        "storage",
+        "alarms"
     ],
     "background": {
         "service_worker": "background.js"
@@ -13,9 +14,8 @@
     "action": {
         "default_popup": "popup.html",
         "default_icon": {
-            "16": "icons/icon16.png",
-            "48": "icons/icon48.png",
-            "128": "icons/icon128.png"
+            "48": "icons/vinotify-48-logo-new.png",
+            "128": "icons/vinotify-128-logo-new.png"
         }
     }
 }
